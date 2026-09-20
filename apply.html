@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+  <head>
+    <meta charset = "utf-8">
+    <meta name = "description" content = "Job Application Form"> 
+    <meta name = "keywords" content = "HTML, Form, tags">
+    <meta name = "author" content = "Danial"> 
+    <title> Job Application Form </title>
+
+  </head>
+
+  <body> 
+    <h1> Job Application Form </h1>
+    
+    <form method="post" action = "https://mercury.swin.edu.au/it000000/formtest.php">
+        <fieldset>
+           <legend> Personal Information </legend>
+           <p>
+            <label for ="Ref_ID" > Job Reference Number: </label>
+            <input type = "text" name = "Ref_ID" id = "Ref_ID" pattern = "[a-zA-Z0-9]{5}"  required>
+
+            <br>
+            <br>
+
+            <label for = "First_Name"> First Name: </label>
+            <input type = "text" name = "First_Name" id = "First_Name" pattern = "[a-zA-Z]{2,20}" required>
+            <label for = "Last_Name"> Last Name: </label>
+            <input type = "text" name = "Last_Name" id = "Last_Name" pattern = "[a-zA-Z]{2,20}" required>
+
+            <br>
+            <br> 
+
+            <label for = "Date_Of_Birth"> Date of Birth: </label>
+            <input type = "date" name = "Date_Of_Birth" id = "Date_Of_Birth" required>
+            <br>
+            <br>
+
+            <label> Gender: </label>
+            <input type = "radio" name = "Gender" id = "Male" value = "Male" required>
+            <label for = "Male"> Male </label>
+            <input type = "radio" name = "Gender" id = "Female" value = "Female" required>
+            <label for = "Female"> Female </label>
+
+            <br>
+            <br>
+
+            <label for = "Street_Address"> Street Address: </label>
+            <input type = "text" name = "Street_Address" id = "Street_Address" pattern = "[a-zA-Z0-9\s]{5,40}" required>
+            <br>
+            <br>
+            <label for = "Suburb"> Suburb/Town: </label>
+            <input type = "text" name = "Suburb" id = "Suburb" pattern = "[a-zA-Z\s]{5,40}" required>
+
+            <br> <!-- USE CSS TO PUT MARGIN OR SPACE MAYBE??-->
+            <br>
+
+            <label for = "State"> State: </label>
+            <select name = "State" id = "State" required>
+                <option value = ""> Please Select </option>
+                <option value = "VIC"> VIC </option>
+                <option value = "NSW"> NSW </option>
+                <option value = "QLD"> QLD </option>
+                <option value = "NT"> NT </option>
+                <option value = "WA"> WA </option>
+                <option value = "SA"> SA </option>
+                <option value = "TAS"> TAS </option>
+                <option value = "ACT"> ACT </option>
+            </select>
+            
+
+            <label for = "Postcode"> Postcode: </label>
+            <input type = "text" name = "Postcode" id = "Postcode" pattern = "[0-9]{4}" required>
+
+            <br>
+            <br>
+
+            <label for = "Email"> Email: </label>
+            <input type = "email" name = "Email" id = "Email" required>
+
+            <br>
+            <br>
+
+            <label for = "Phone_Number"> Phone Number: </label>
+            <input type = "text" name = "Phone_Number" id = "Phone_Number" pattern = "[0-9]{8,12}" required>
+
+            <br>
+            <br>
+             
+
+        </fieldset>
+
+<fieldset> <!-- Add the job specification later-->
+            <legend>Skill List:</legend>
+                <label for = "Communication"> Communication </label>
+                <input type = "checkbox" name = "Skill_List" id = "Communication" value = "Communication" checked >
+                <label for = "Teamwork"> Teamwork </label>
+                <input type = "checkbox" name = "Skill_List" id = "Teamwork" value = "Teamwork" >
+                <label for = "Problem_Solving"> Problem Solving </label>
+                <input type = "checkbox" name = "Skill_List" id = "Problem_Solving" value = "Problem_Solving" >
+                <label for = "Adapatability"> Adaptability </label>
+                <input type = "checkbox" name = "Skill_List" id = "Adapatability" value = "Adapatability" >
+                <label for = "Computer_Literacy"> Computer Literacy </label>
+                <input type = "checkbox" name = "Skill_List" id = "Computer_Literacy" value = "Computer_Literacy" >
+
+                <br>
+                <br>
+
+                <p><label> Other Skills: </label></p>
+                <textarea name = "Other_Skills" id = "Other_Skills" rows = "8" cols = "40"></textarea>
+                
+        </fieldset>
+
+
+    
+
+
+           <input type = "submit" value = "Submit">
+    </form>
+
+
+
+
+
+
+</html>
