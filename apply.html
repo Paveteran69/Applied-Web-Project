@@ -7,7 +7,7 @@
     <meta name = "keywords" content = "HTML, Form, tags">
     <meta name = "author" content = "Danial"> 
     <title> Job Application Form </title>
-
+    
   </head>
 
   <body> 
@@ -70,19 +70,19 @@
             
 
             <label for = "Postcode"> Postcode: </label>
-            <input type = "text" name = "Postcode" id = "Postcode" pattern = "[0-9]{4}" required>
+            <input type = "text" name = "Postcode" id = "Postcode" pattern = "[0-9]{4}" placeholder = "Eg. 3000" required>
 
             <br>
             <br>
 
             <label for = "Email"> Email: </label>
-            <input type = "email" name = "Email" id = "Email" required>
+            <input type = "email" name = "Email" id = "Email" placeholder = "Eg. example@email.com" required>
 
             <br>
             <br>
 
             <label for = "Phone_Number"> Phone Number: </label>
-            <input type = "text" name = "Phone_Number" id = "Phone_Number" pattern = "[0-9]{8,12}" required>
+            <input type = "text" name = "Phone_Number" id = "Phone_Number" pattern = "[0-9]{8,12}" placeholder = "Enter phone number" required>
 
             <br>
             <br>
@@ -90,26 +90,62 @@
 
         </fieldset>
 
-<fieldset> <!-- Add the job specification later-->
-            <legend>Skill List:</legend>
-                <label for = "Communication"> Communication </label>
-                <input type = "checkbox" name = "Skill_List" id = "Communication" value = "Communication" checked >
-                <label for = "Teamwork"> Teamwork </label>
-                <input type = "checkbox" name = "Skill_List" id = "Teamwork" value = "Teamwork" >
-                <label for = "Problem_Solving"> Problem Solving </label>
-                <input type = "checkbox" name = "Skill_List" id = "Problem_Solving" value = "Problem_Solving" >
-                <label for = "Adapatability"> Adaptability </label>
-                <input type = "checkbox" name = "Skill_List" id = "Adapatability" value = "Adapatability" >
-                <label for = "Computer_Literacy"> Computer Literacy </label>
-                <input type = "checkbox" name = "Skill_List" id = "Computer_Literacy" value = "Computer_Literacy" >
 
-                <br>
-                <br>
+    
+    
+        <fieldset>
+        
+           <legend>Desired Role:</legend>
+           <div id="desired-role"></div>
+    
+           <input type="radio" name="Desired_Role" id="Front-End-Developer" value="Front-End Developer" required>
+           <label for="Front-End-Developer"> Front-End Developer </label>
 
-                <p><label> Other Skills: </label></p>
-                <textarea name = "Other_Skills" id = "Other_Skills" rows = "8" cols = "40"></textarea>
-                
+           <input type="radio" name="Desired_Role" id="Backend-Developer" value="Back-end Developer" required>
+           <label for="Backend-Developer"> Back-end Developer </label>
+
+           <input type="radio" name="Desired_Role" id="Vulnerability-Analyst" value="Vulnerability Analyst" required>
+           <label for="Vulnerability-Analyst"> Vulnerability Analyst </label> 
+
+           <input type="radio" name="Desired_Role" id="Helpdesk-Technician" value="Helpdesk Technician" required>
+           <label for="Helpdesk-Technician"> Helpdesk Technician </label>
+           
+
         </fieldset>
+
+        <fieldset>
+            <legend>Soft/Technical Skills:</legend>
+        
+            <div id="Skills">
+            
+            
+            <input type="checkbox" name="Skill_List" id="Communication" value="Communication" checked>
+            <label for="Communication"> Communication </label>
+        
+            <input type="checkbox" name="Skill_List" id="Teamwork" value="Teamwork">
+            <label for="Teamwork"> Teamwork </label>
+        
+            <input type="checkbox" name="Skill_List" id="Problem_Solving" value="Problem_Solving">
+            <label for="Problem_Solving"> Problem Solving </label>
+        
+            <input type="checkbox" name="Skill_List" id="Adaptability" value="Adaptability">
+            <label for="Adaptability"> Adaptability </label>
+        
+            <input type="checkbox" name="Skill_List" id="Computer_Literacy" value="Computer_Literacy">
+            <label for="Computer_Literacy"> Computer Literacy </label>
+            </div>
+
+           <br>
+
+        
+           <div id="other-skills">
+           <label for="Other_Skills">Other Skills:</label>
+           <textarea placeholder="Please specify any other relevant skills..." name="Other_Skills" id="Other_Skills" rows="8" cols="40"></textarea>
+           </div>
+        </fieldset>
+        
+
+
 
 
     
@@ -117,6 +153,8 @@
 
            <input type = "submit" value = "Submit">
     </form>
+
+ </body>
 
 
 
