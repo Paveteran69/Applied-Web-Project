@@ -1,0 +1,56 @@
+/*Nav start here*/
+body{
+    margin:0;
+}
+
+
+.navigation{
+    display: flex;
+    font-family:Georgia;
+    height:100%;
+    align-items: center;
+    margin-left: 325px;
+}
+
+
+.top_area{
+    border:solid grey;
+    border-width:0px 0px 5px 0px;
+    clear:both;
+    height:100px;
+    background-color:rgb(165, 159, 159);
+    margin-top: 0;
+}
+
+.service_head{
+    font-size:2em
+ }
+
+ /*Fintech logo*/
+.logo{
+    position:absolute;
+    font-size:2em;
+    margin-left:50px;
+    float:left;
+    min-width:20px ;
+    margin-top:13px;
+}
+
+
+nav a{
+    display:inline-block;
+    font-size: 1.75em;
+    text-decoration:none;
+    color: black;
+    padding: 38px 1.75em;
+    border-right: 2px solid darkslategray;
+
+
+}
+nav a:hover{
+    background-color:white;
+}
+
+nav a:first-child{
+    border-left:2px solid darkslategray;
+}
