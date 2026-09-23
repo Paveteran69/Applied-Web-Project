@@ -420,10 +420,12 @@ fieldset {background-color: #FFFF;
     box-shadow: 4px 4px 10px 0px black;
     }
 
+
+    /*reset the akshay's rule border for apply page */
     fieldset.no-border {
-    border: none !important;
-    box-shadow: none !important;
-    background-color: transparent !important;
+    border: none ;
+    box-shadow: none ;
+    background-color: transparent ;
     padding: 0;
     margin: 0;
 }
@@ -446,12 +448,13 @@ legend {font-size: 20px;
     
 }
 
+/* reset color change from akshay's rule */
 .form-container label,
 .form-container span,
 .form-container li,
 .form-container .input-option {
     color: black ; 
-    font-weight: lighter;/* Changes text to dark gray / charcoal */
+    font-weight: lighter;
 }
 
 
@@ -466,19 +469,11 @@ legend {font-size: 20px;
     
 }
 
-.gender-group {
-  border: none;
-  background: transparent;
-  padding: 0;
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
+
 
 .gender-group .field-label {
   
-  /* Resetting uborder from akshay's rule */
+  /* Resetting border from akshay's rule */
   border: none ;
   background-color: transparent ;
   padding: 0 ;
