@@ -7,7 +7,7 @@
     <meta name = "keywords" content = "HTML, Form, tags">
     <meta name = "author" content = "Danial"> 
     <title> Job Application Form </title>
-    <link href = "layout_2.css" rel = "stylesheet">
+    <link href = "Styles.css" rel = "stylesheet">
 
      <!-- Embedded CSS-->
    <style> 
@@ -27,18 +27,23 @@
   <body> 
 
    <!--Navigation Bar start-->
-            <div class="top_area">
-                <span class="logo"><img src="FINTECH_LOGO.jpeg" alt="Fintech company logo" height="75" width="250"></span>
-                <div class="navigation">
+            <header class="top_area">
+   <a href="#" class="logo">
+     <img src="images/FINTECH_LOGO.jpeg" alt="Fintech Logo" height="65rem" width="250rem">
+   </a>
 
-                    <nav>
-                        <a href="">Home</a><a href="">Jobs</a><a href="">About</a>
+  <nav class="navigation">
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">About</a>
+  </nav>
 
-                    </nav>    
+  <div class="searchbar">
+    <input type="text" placeholder="Search...">
+    <button type="submit"><i class="fa fa-search"></i><img src="images/search.png" alt="Search Logo" width="14rem" height="14rem"></button>
+  </div>
 
-                </div>
-            </div>
-
+            </header>
 
     <!-- The start of the form-->
 
@@ -229,10 +234,11 @@
      
 
     <footer>
-            
-            <p>Contact us: <a href="mailto:info@fintech.com">info@fintech.com</a></p>
-            <p>&copy;2026 FinTech. All rights reserved.</p>
-        </footer>
+            <p style="font-weight: bold; color:darkblue">My Sources:<br>MADCAP<br>Indeed<br>OrgChart<br>Fortinet<br>Unihackers<br>Interview Kickstart<br>Gemini<br>
+               <a href="#index" target="blank"><img src="images/jira.webp" alt="Jira" title="Jira" width="35" height="35" />
+               </a> <a href="#index" target="blank"><img src="images/github.webp" alt="GitHub" title="GitHub" width="35" height="35" /><br>
+               </a> Contact us: <a href="mailto:info@fintech.com">info@fintech.com</a><br>&copy;2026 FinTech. All rights reserved.</p>
+  </footer>
 
 
  </body>
