@@ -271,3 +271,347 @@ body {
   font-size: 2em;
 }
 /*Akshay's Part End*/
+
+
+/*Danial's PART STARTTTT*/
+
+body{
+    background-color:lightcyan;
+    background-image: linear-gradient( cornflowerblue,lightsteelblue,lightcyan,
+    lightsteelblue,cornflowerblue);
+}
+
+.searchbar input[type="text"] {
+    all: revert;
+}
+
+.top_area {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+  padding: 0 2rem;
+  min-height: 6rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+  padding: 0 2rem;
+  min-height: 6rem;
+  background-color: rgb(165, 159, 159);
+  border-bottom: 5px solid grey;
+  width: 100%;
+  min-width: max-content;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.navigation a {
+  display: inline-block;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #000;
+  padding: 0.75rem 1.25rem;
+  border-right: 2px solid darkslategray;
+  transition: background-color 0.2s ease;
+}
+
+.navigation a:first-child {
+  border-left: 2px solid darkslategray;
+}
+
+.navigation a:hover {
+  background-color: #fff;
+}
+
+/* Search bar styling */
+.searchbar {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.searchbar input[type="text"] {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: none;
+  font-style: italic;
+  outline: none;
+}
+
+.searchbar button {
+  padding: 0.6rem 1.5rem;
+  background-color: #ddd;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.searchbar button:hover {
+  background-color: #ccc;
+}
+
+.service_head {
+  font-size: 2em;
+}
+
+/* For the header part */
+.h1forapply {
+    text-align: center; 
+    font-weight: 500;
+    color: teal; 
+    
+    /* Explicitly reset width rules inherited from h1 */
+    width: 100%;
+    min-width: auto;
+    max-width: 1100px;
+
+    /* Override border properties explicitly */
+    border: 3px solid #5179b0;
+    border-radius: 0; /* Reset border radius if you don't want rounded corners */
+    
+    background-color: #ffffff; /* Corrected to standard 6-digit hex */
+    padding: 20px; 
+    margin: 20px auto;
+    
+    animation-name: headerAnimationforApply;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes headerAnimationforApply {
+   0% { background-color: #93c2ff; }
+  33% { background-color: lightgreen; }
+  66% { background-color: lightyellow; }
+  100% { background-color: #93c2ff; }
+    
+}
+
+
+/* styling the fieldset */
+fieldset {background-color: #FFFF; 
+    border : 5px solid #64748B; 
+    padding: 20px; 
+    margin: 20px;
+    width: 100%;
+    min-width: 0;
+    text-align: left;
+    box-shadow: 4px 4px 10px 0px black;
+    }
+
+
+    /*reset the akshay's rule border for apply page */
+    fieldset.no-border {
+    border: none ;
+    box-shadow: none ;
+    background-color: transparent ;
+    padding: 0;
+    margin: 0;
+}
+
+    
+legend {font-size: 20px; 
+    font-weight: bold; 
+    color: teal;
+    border:2px solid #64748B;
+    border-style: outset;
+    background-color: lightcyan;}
+.form-container{ 
+    display: flex ; 
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1200px;
+    margin:auto;
+    gap: 40px; 
+    
+}
+
+/* reset color change from akshay's rule */
+.form-container label,
+.form-container span,
+.form-container li,
+.form-container .input-option {
+    color: black ; 
+    font-weight: lighter;
+}
+
+
+/*Styling the left side of the form */
+.left-column{
+    width:45%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;  
+
+                      
+    
+}
+
+
+
+.gender-group .field-label {
+  
+  /* Resetting border from akshay's rule */
+  border: none ;
+  background-color: transparent ;
+  padding: 0 ;
+  color: #000;
+}
+
+/*styling the right side of the form*/
+.right-column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    width: 35%;
+
+}
+
+
+
+
+.right-column fieldset {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 6px;         
+      
+}
+
+
+.desired-column fieldset,
+.right-column fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* To space the options */
+}
+
+/*Wrap the radio n checkbox */
+.input-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+/* Prevent inputs from shifting or breaking out when we make the page smaller*/
+.input-option input[type="checkbox"],
+.input-option input[type="radio"], input[type="radio"],
+select{
+  position: static;
+  margin: 0;
+  cursor: pointer;
+}
+
+
+
+textarea{ width: 100%;
+max-width: 100%;}
+
+/* To make the submit button stay at the bottom right*/
+.submit-button-container{
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin: 0;
+    
+   
+}
+
+.submit-button{
+    transition: transform 0.3s ease-in-out;
+    border-radius: 6px;
+}
+/* WHen hovering the button changes colour and bigger*/
+.submit-button:hover{
+    background-color: lightblue;
+    transform: scale(1.2);
+}
+
+.file-button{
+    display:flex;
+    cursor: pointer;
+}
+
+
+.desired-column {
+    display: flex;
+    flex-wrap: wrap;        
+    align-items: center;
+}
+
+.desired-column input{
+    position:relative;
+    bottom:24px;
+    right:60px;
+}
+
+.desired-column fieldset{
+    display: flex;
+    flex: 1;
+    flex-direction: column; 
+}
+
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 90%;
+    padding: 6px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #0066cc; 
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.15);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="radio"],
+select{
+    margin: 10px
+}
+
+input[type="submit"] {
+    font-size: 18px;       
+    padding: 5px 10px;   
+    background-color: #fff; 
+    cursor: pointer;
+    
+}
+
+footer{
+    border-top: 3px solid black;
+    clear: both;
+    text-align: center;
+}
+
+input:hover,
+select:hover,
+textarea:hover{
+    background-color: lightgray;
+}
+
+input:user-invalid,
+select:user-invalid{
+    color: red;
+    border-color: red;
+    
+}
