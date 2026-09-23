@@ -394,13 +394,13 @@ body{
     padding: 20px; 
     margin: 20px auto;
     
-    animation-name: headerAnimation;
+    animation-name: headerAnimationforApply;
     animation-duration: 8s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
 
-@keyframes headerAnimation {
+@keyframes headerAnimationforApply {
    0% { background-color: #93c2ff; }
   33% { background-color: lightgreen; }
   66% { background-color: lightyellow; }
