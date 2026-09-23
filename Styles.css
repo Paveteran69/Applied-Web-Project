@@ -22,34 +22,6 @@ body{
     margin-top: 0;
 }
 
-.searchbar{
-    float: right;
-    margin-left:auto;
-}
-
-.searchbar input[type=text]{
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 1em;
-    border: none;
-    font-style: italic;
-}
-
-.searchbar button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 1em;
-  border: none;
-  cursor: pointer;
-}
-
-.searchbar button:hover {
-  background: #ccc;
-}
-
 .service_head{
     font-size:2em
  }
@@ -82,3 +54,4 @@ nav a:hover{
 nav a:first-child{
     border-left:2px solid darkslategray;
 }
+

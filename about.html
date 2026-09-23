@@ -2,14 +2,54 @@
 <html lang="en">
 <head>
     <style>
+        footer{
+    border-top: 3px solid black;
+    clear: both;
+    text-align: center;
+    }
+
+        figure {
+            border: 5px solid #3b3be4;
+            border-radius: 10px;
+            width: fit-content;
+            text-align: center;
+        }
+
         .about_id {
             font-weight: bold;
             font-style: italic;
             text-decoration: underline;
         }
+
+        table, th, td{
+            border-style: double;
+            border-width: 2px;
+            border-color:skyblue;
+            padding: 5px;
+        }
+        td {
+            background-color:#f9e693;
+        }
+        thead{
+            background-color: #b6f549;
+        }
+
+        td:hover {
+            background-color: #5ef686;
+        }
+        
+        td:active {
+            background-color: #ff57b1;
+        }
+
+
+
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the about page of the project">
+        <meta name="keywords" content="HTML5, CSS, about, us, contact, information, schedule, team, members, fun facts">
+        <meta name="author" content="Ryan Stothard">
     <title>About Us</title>
 </head>
 <body>
@@ -43,7 +83,7 @@
                 <dd><i>"Aku suka kura-kura" ~ (I love turtles, in Malay)</i></dd>
             </dl>
             <dl>
-                <dt>Nik Mohamed Aiman Bin Nik Ahmad Ryad(Head Website Designer for CSS, overall assistance)</dt>
+                <dt>Nik Mohamed Aiman(Head Website Designer for CSS, overall assistance)</dt>
                 <dd><i>"Sikit-sikit, lama-lama jadi bukit." ~ (Little by little, soon becomes a hill, in Malay)</i></dd>
             </dl>
             <dl>
@@ -63,7 +103,7 @@
                 <caption>Fun Facts About Our Team Members</caption>
                 <thead>
                     <tr>
-                        <th>Member</th>
+                        <th>Members</th>
                         <th>Fun Fact</th>
                     </tr>
                 </thead>
@@ -81,7 +121,7 @@
                         <td>Drinks 10 liters of water every day</td>
                     </tr>
                     <tr>
-                        <td class="about_id">Nik Mohamed Aiman Bin Nik Ahmad Ryad (ID: 106729026)</td>
+                        <td class="about_id">Nik Mohamed Aiman (ID: 106729026)</td>
                         <td>His favourite color is pink</td>
                     </tr>
                     <tr>
@@ -96,9 +136,13 @@
             <p>We respectfully acknowledge the Wurundjeri People of the Kulin Nation, who are the Traditional Owners of the land on which Kelantan United's offices and operations are located in Melbourne's east and outer-east, and pay our respect to their Elders past, present and emerging. We are honoured to recognise our connection to Wurundjeri Country, history, culture and spirituality through these locations, and strive to ensure that we operate in a manner that respects and honours the Elders and Ancestors of these lands. We also respectfully acknowledge Swinburne's Aboriginal and Torres Strait Islander staff, students, alumni, partners and visitors. We also acknowledge and respect the Traditional Owners of lands across Australia, their Elders, Ancestors, cultures and heritage, and recognise the continuing sovereignties of all Aboriginal and Torres Strait Islander Nations.</p>
         </aside>
     </main>
-    <hr>
     <footer>
-        <p>&copy; 2024 Kelantan United. All rights reserved.</p>
-    </footer>
+            <p>
+                <a href="#index" target="blank"><img src="images/jira.webp" alt="Jira" title="Jira" width="35" height="35" /></a>
+                <a href="#index" target="blank"><img src="images/github.webp" alt="GitHub" title="GitHub" width="35" height="35" /></a>
+            </p>
+            <p>Contact us: <a href="mailto:info@fintech.com">info@fintech.com</a></p>
+            <p>&copy;2026 FinTech. All rights reserved.</p>
+        </footer>
 </body>
 </html>
