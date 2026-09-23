@@ -7,154 +7,236 @@
     <meta name = "keywords" content = "HTML, Form, tags">
     <meta name = "author" content = "Danial"> 
     <title> Job Application Form </title>
+    <link href = "layout_2.css" rel = "stylesheet">
+
+     <!-- Embedded CSS-->
+   <style> 
+  .form-section {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .form-section:hover{
+    transform: scale(1.1); 
+    background-color: lightcyan;
+  }
+  
+</style>
     
   </head>
 
   <body> 
-    <h1> Job Application Form </h1>
+
+   <!--Navigation Bar start-->
+            <div class="top_area">
+                <span class="logo"><img src="FINTECH_LOGO.jpeg" alt="Fintech company logo" height="75" width="250"></span>
+                <div class="navigation">
+
+                    <nav>
+                        <a href="">Home</a><a href="">Jobs</a><a href="">About</a>
+
+                    </nav>    
+
+                </div>
+            </div>
+
+
+    <!-- The start of the form-->
+
+    <h1> JOB APPLICATION FORM  </h1>
     
     <form method="post" action = "https://mercury.swin.edu.au/it000000/formtest.php">
-        <fieldset>
+        <div class="form-container">  <!-- To set class for the whole form-->
+          
+          <div class="left-column">   <!-- Set the class for the left side of the form (personal info and desired role)-->
+          <fieldset class = "form-section"> <!-- set class for the form fieldsets-->
            <legend> Personal Information </legend>
-           <p>
             <label for ="Ref_ID" > Job Reference Number: </label>
             <input type = "text" name = "Ref_ID" id = "Ref_ID" pattern = "[a-zA-Z0-9]{5}"  required>
 
-            <br>
-            <br>
+            <!-- USE CSS TO PUT MARGIN OR SPACE MAYBE??-->
 
             <label for = "First_Name"> First Name: </label>
             <input type = "text" name = "First_Name" id = "First_Name" pattern = "[a-zA-Z]{2,20}" required>
+            
+
             <label for = "Last_Name"> Last Name: </label>
             <input type = "text" name = "Last_Name" id = "Last_Name" pattern = "[a-zA-Z]{2,20}" required>
 
-            <br>
-            <br> 
+             
 
             <label for = "Date_Of_Birth"> Date of Birth: </label>
             <input type = "date" name = "Date_Of_Birth" id = "Date_Of_Birth" required>
-            <br>
-            <br>
+            
 
-            <label> Gender: </label>
+            <p>Gender:
             <input type = "radio" name = "Gender" id = "Male" value = "Male" required>
             <label for = "Male"> Male </label>
             <input type = "radio" name = "Gender" id = "Female" value = "Female" required>
             <label for = "Female"> Female </label>
 
             <br>
-            <br>
+            
 
             <label for = "Street_Address"> Street Address: </label>
             <input type = "text" name = "Street_Address" id = "Street_Address" pattern = "[a-zA-Z0-9\s]{5,40}" required>
-            <br>
-            <br>
+            
+
             <label for = "Suburb"> Suburb/Town: </label>
             <input type = "text" name = "Suburb" id = "Suburb" pattern = "[a-zA-Z\s]{5,40}" required>
 
-            <br> <!-- USE CSS TO PUT MARGIN OR SPACE MAYBE??-->
-            <br>
+            
 
             <label for = "State"> State: </label>
             <select name = "State" id = "State" required>
                 <option value = ""> Please Select </option>
-                <option value = "VIC"> VIC </option>
-                <option value = "NSW"> NSW </option>
-                <option value = "QLD"> QLD </option>
-                <option value = "NT"> NT </option>
-                <option value = "WA"> WA </option>
-                <option value = "SA"> SA </option>
-                <option value = "TAS"> TAS </option>
-                <option value = "ACT"> ACT </option>
+                <option value = "VIC"> Victoria </option>
+                <option value = "NSW"> New South Wales</option>
+                <option value = "QLD"> Queensland </option>
+                <option value = "NT"> Northern Territory </option>
+                <option value = "WA"> Western Australia </option>
+                <option value = "SA"> South Australia </option>
+                <option value = "TAS"> Tasmania </option>
+                <option value = "ACT"> Australian Capital Territory </option>
             </select>
             
 
             <label for = "Postcode"> Postcode: </label>
             <input type = "text" name = "Postcode" id = "Postcode" pattern = "[0-9]{4}" placeholder = "Eg. 3000" required>
 
-            <br>
-            <br>
+            
 
             <label for = "Email"> Email: </label>
             <input type = "email" name = "Email" id = "Email" placeholder = "Eg. example@email.com" required>
 
-            <br>
-            <br>
+            
 
             <label for = "Phone_Number"> Phone Number: </label>
             <input type = "text" name = "Phone_Number" id = "Phone_Number" pattern = "[0-9]{8,12}" placeholder = "Enter phone number" required>
 
-            <br>
-            <br>
-             
-
-        </fieldset>
+            
+         
+           
+         </fieldset>
+         
 
 
     
-    
-        <fieldset>
+        
+
+         <div class = "desired-column">  <!-- set class just for this part-->
+        <fieldset class = "form-section">
         
            <legend>Desired Role:</legend>
-           <div id="desired-role"></div>
-    
-           <input type="radio" name="Desired_Role" id="Front-End-Developer" value="Front-End Developer" required>
-           <label for="Front-End-Developer"> Front-End Developer </label>
-
-           <input type="radio" name="Desired_Role" id="Backend-Developer" value="Back-end Developer" required>
-           <label for="Backend-Developer"> Back-end Developer </label>
-
-           <input type="radio" name="Desired_Role" id="Vulnerability-Analyst" value="Vulnerability Analyst" required>
-           <label for="Vulnerability-Analyst"> Vulnerability Analyst </label> 
-
-           <input type="radio" name="Desired_Role" id="Helpdesk-Technician" value="Helpdesk Technician" required>
-           <label for="Helpdesk-Technician"> Helpdesk Technician </label>
            
+           <label class="input-option">
+              <input type="radio" name="Desired_Role" value="Front-End Developer" required>
+              <span>Front-End Developer</span>
+            </label>
 
-        </fieldset>
+            <label class="input-option">
+              <input type="radio" name="Desired_Role" value="Back-end Developer" required>
+              <span>Back-end Developer</span>
+            </label>
 
-        <fieldset>
+            <label class="input-option">
+              <input type="radio" name="Desired_Role" value="Vulnerability Analyst" required>
+              <span>Vulnerability Analyst</span>
+            </label>
+
+            <label class="input-option">
+              <input type="radio" name="Desired_Role" value="Helpdesk Technician" required>
+              <span>Helpdesk Technician</span>
+            </label>
+          </fieldset>
+        </div>
+      </div>
+      
+
+        <div class = "right-column"> <!-- set class for the right side of the form (Skills)-->
+        <fieldset class = "form-section">
+
             <legend>Soft/Technical Skills:</legend>
         
-            <div id="Skills">
-            
-            
-            <input type="checkbox" name="Skill_List" id="Communication" value="Communication" checked>
-            <label for="Communication"> Communication </label>
-        
-            <input type="checkbox" name="Skill_List" id="Teamwork" value="Teamwork">
-            <label for="Teamwork"> Teamwork </label>
-        
-            <input type="checkbox" name="Skill_List" id="Problem_Solving" value="Problem_Solving">
-            <label for="Problem_Solving"> Problem Solving </label>
-        
-            <input type="checkbox" name="Skill_List" id="Adaptability" value="Adaptability">
-            <label for="Adaptability"> Adaptability </label>
-        
-            <input type="checkbox" name="Skill_List" id="Computer_Literacy" value="Computer_Literacy">
-            <label for="Computer_Literacy"> Computer Literacy </label>
-            </div>
-
-           <br>
-
-        
-           <div id="other-skills">
-           <label for="Other_Skills">Other Skills:</label>
-           <textarea placeholder="Please specify any other relevant skills..." name="Other_Skills" id="Other_Skills" rows="8" cols="40"></textarea>
-           </div>
-        </fieldset>
-        
-
-
-
-
     
+            
+            
+            <label class="input-option"> <!-- To Style the input buttons so that it aligns with the text-->
+            <input type="checkbox" name="Skill_List[]" value="Communication" checked>
+            <span>Communication</span>
+          </label>
 
+          <label class="input-option">
+            <input type="checkbox" name="Skill_List[]" value="Teamwork">
+            <span>Teamwork</span>
+          </label>
 
-           <input type = "submit" value = "Submit">
+          <label class="input-option">
+            <input type="checkbox" name="Skill_List[]" value="Problem_Solving">
+            <span>Problem Solving</span>
+          </label>
+
+          <label class="input-option">
+            <input type="checkbox" name="Skill_List[]" value="Adaptability">
+            <span>Adaptability</span>
+          </label>
+
+          <label class="input-option">
+            <input type="checkbox" name="Skill_List[]" value="Computer_Literacy">
+            <span>Computer Literacy</span>
+          </label>
+
+          <label class="input-option">
+            <input type="checkbox" name="Skill_List[]" value="Spreadsheet_Modelling_Master">
+            <span>Spreadsheet and Modelling Mastery</span>
+          </label>
+
+          <label class="input-option">
+            <input type="checkbox" name="Skill_List[]" value="Programming">
+            <span>Programming</span>
+          </label>
+
+          <label class="input-option">
+            <input type="checkbox" name="Skill_List[]" value="Cybersecurity">
+            <span>Cybersecurity</span>
+          </label>
+
+          <label class="input-option">
+            <input type="checkbox" name="Skill_List[]" value="Data_Science_Analytics">
+            <span>Data Science and Analytics</span>
+          </label>
+        
+
+          
+
+        
+        
+           <label for="Other_Skills">Other Skills or previous work experience:</label>
+           <textarea placeholder="Please specify any other relevant skills..." name="Other_Skills" id="Other_Skills" rows="25" cols="40"></textarea>
+
+           <label for="file-upload">Upload Qualifications or Certificates </label> <!--allow users to upload files to the form-->
+  
+           <input type="file" multiple id="file-upload" name="uploaded_file" class="file-button">
+        
+        </fieldset>
+        </div> 
+
+           <div class ="submit-button-container">
+           <input type = "submit" value = "Submit" class="submit-button">
+           </div>
+
+      </div>
     </form>
+     
+
+    <footer>
+            
+            <p>Contact us: <a href="mailto:info@fintech.com">info@fintech.com</a></p>
+            <p>&copy;2026 FinTech. All rights reserved.</p>
+        </footer>
+
 
  </body>
+
 
 
 
