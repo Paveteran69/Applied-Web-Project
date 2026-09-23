@@ -47,7 +47,7 @@
 
     <!-- The start of the form-->
 
-    <h1> JOB APPLICATION FORM  </h1>
+    <h1 class="h1forapply"> JOB APPLICATION FORM  </h1>
     
     <form method="post" action = "https://mercury.swin.edu.au/it000000/formtest.php">
         <div class="form-container">  <!-- To set class for the whole form-->
@@ -73,12 +73,16 @@
             <input type = "date" name = "Date_Of_Birth" id = "Date_Of_Birth" required>
             
 
-            <p>Gender:
-            <input type = "radio" name = "Gender" id = "Male" value = "Male" required>
-            <label for = "Male"> Male </label>
-            <input type = "radio" name = "Gender" id = "Female" value = "Female" required>
-            <label for = "Female"> Female </label>
-
+            <div class="gender-group">
+  <p class="field-label">Gender</p>
+  
+  <label class="input-option">
+    <input type="radio" name="gender" value="male"> Male
+  </label>
+  <label class="input-option">
+    <input type="radio" name="gender" value="female"> Female
+  </label>
+</div>
             <br>
             
 
