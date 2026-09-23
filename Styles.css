@@ -112,6 +112,11 @@ max-width: 300px;
   text-align: center;
 }
 
+hr {
+color: darkblue;
+}  
+
+
 /*wrapper styling*/
 .wrapper {
   display: flex;
