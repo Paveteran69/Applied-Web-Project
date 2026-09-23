@@ -185,11 +185,6 @@ transition: transform 0.25s ease;
   }
 }
 
-/*list styling*/
-li {
-color: blue;
-}
-
 body {
   margin: 0;
   font-family: Georgia, serif;
