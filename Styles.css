@@ -36,28 +36,13 @@ background-color: rgba(0, 119, 255, 0.859);
 border-radius: 12px;
 }
 
-/*h1 styling*/
-h1 {
+/*heading_jb styling*/
+.heading_jb {
 text-align: center;
 width: 20%;
 max-width: 280px;
 min-width: 280px;
 margin: 0.5em;
-}
-
-/*list styling*/
-li {
-color: blue;
-}
-
-/*unordered list styling*/
-ul li {
-list-style-type: square;
-}
-
-/*ordered styling*/
-ol li {
-list-style-type: upper-roman;
 }
 
 /*lists styling*/
@@ -100,7 +85,7 @@ max-width: 200px;
 }
 
 /*aside styling*/
-aside {
+.aside_jb {
 float: right;
 position: relative;
 width: 25%;
@@ -119,7 +104,7 @@ max-width: 300px;
 }
 
 /*footer styling*/
-footer {
+.footer_jb {
   position: relative;
   clear: both;
   margin-top: 3em;     
@@ -188,21 +173,21 @@ transition: transform 0.25s ease;
 
 /*Changes style of elements after a certain px size*/
 @media screen and (max-width: 700px) {
-  aside {
+  .aside_jb {
     position: static;   
     margin: 1.5em auto; 
     top: auto;          
     right: auto;         
   }
 
-  footer {
+  .footer_jb {
     margin-top: 2em;     
   }
 }
 
-/*hr styling*/
-hr {
-border-color: blue;
+/*list styling*/
+li {
+color: blue;
 }
 
 body {
