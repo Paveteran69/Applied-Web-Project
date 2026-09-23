@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <style>
         footer{
@@ -49,94 +48,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is the about page of the project">
         <meta name="keywords" content="HTML5, CSS, about, us, contact, information, schedule, team, members, fun facts">
-        <meta name="author" content="Ryan Stothard">
+        <meta name="author" content="Ryan Stothard/Aiman">
+    <link href="Styles.css" rel="stylesheet">
     <title>About Us</title>
 </head>
 <body>
-    <header>
-        <h1>About Us</h1>
-    </header>
+    <div class="wrapper_ab">
+        <section class="background">
+                    <!--Navigation Bar start-->
+            <header class="top_area">
+                <a href="#" class="logo">
+                    <img src="images/FINTECH_LOGO.jpeg" alt="Fintech Logo" height="65rem" width="250rem">
+                </a>
 
-    <main>
-        <section>
-            <h2>Who We Are</h2>
-            <p>We are <strong>Kelantan United</strong>, a Fintech company based in Swinburne!</p>
-            <p>Our classes for COS10026 are scheduled as follows:</p>
-            <ul>
-                <li>Monday: 4:00 PM - 6:00 PM</li>
-                <li>Thursday: 2:00 PM - 4:00 PM</li>
-            </ul>
+                <nav class="navigation">
+                    <a href="#">Home</a>
+                    <a href="#">Services</a>
+                    <a href="#">About</a>
+                </nav>
+
+                <div class="searchbar">
+                    <input type="text" placeholder="Search...">
+                    <button type="button"><img src="images/search.png" alt="Search Logo" width="14rem" height="14rem"></button>
+                </div>
+
+            </header>
+                <!--End-->
+            <header>
+                <div class="title_ab"><h1>About Us</h1></div>
+            </header>
+
+            <main>
+                
+                <section class="middle_section_ab"> 
+                    <div class="who_ab"><h2 class="fix_1">Who Are We</h2></div>
+                    <div class="us_ab">
+                        <div class="text1_ab">
+                            <p>We are <strong>Kelantan United</strong>, a Fintech company based in Swinburne!</p>
+                        </div>
+                        <div class="group_photo_ab" >
+                            <img src="images/picgroup.jpg" alt="Group Photo" height="auto" width="100%">
+                            <figcaption><strong>Group members from Left to Right: Akshay, Danial , Nik, Paveteran, Ryan</strong></figcaption>
+                        </div>
+                    </div>
+                    <div class="text2_ab">
+                        <p>Our classes for COS10026 are scheduled as follows:</p>
+                    
+                        <ul>
+                            <li>Monday: 4:00 PM - 6:00 PM</li>
+                            <li>Thursday: 2:00 PM - 4:00 PM</li>
+                        </ul>
+                    </div>
+                    <br>
+
+                </section>
+
+                <section class="sub_section_block_ab">
+                    <div class="sub_topic_ab"><h2>Member Contributions and Quotes</h2></div>
+                    <div class="people_ab">
+                            <dl>
+                                <div class="ryan_ab">
+                                    <dt>Ryan Stothard</dt>
+                                </div>
+                                <div class="ryan_text_ab">
+                                    <dd><i>Contributions:about.html, about.css, JIRA</i></dd>
+                                    <dd><i>Quote:"I give em an inch, and they take a mile!"</i></dd>
+                                </div>
+                            </dl>
+                        <dl>
+                            <div class="akshay_ab">
+                                <dt>Akshay Kumar</dt>
+                            </div>
+                            <div class="akshay_text_ab">
+                                <dt>Contributions:jobs.html, jobs.css, Group Leader</dt>
+                                <dd><i>Quote"Looking for my next meal"</i></dd>
+                            </div>
+                        </dl>
+                        <dl>
+                            <div class="danial_ab">
+                                <dt>Muhamad Danial</dt>
+                            </div>
+                            <div class="danial_text_ab">
+                                <dt>Contributions:apply.html, apply.css</dt>
+                                <dd><i>Quote"Aku suka kura-kura" ~ (I love turtles, in Malay)</i></dd>
+                            </div>
+                        </dl>
+                        <dl>
+                            <div class="nik_ab">
+                                <dt>Nik Aiman</dt>
+                            </div>
+                            <div class="nik_text_ab">
+                                <dt>Contributions:services.html, services.css, Head Website Designer for CSS</dt>
+                                <dd><i>Quote:"Hidup Melayu" ~ (live for the malays)</i></dd>
+                            </div>
+                        </dl>
+                        <dl>
+                            <div class="pave_ab">
+                                <dt>Paveteran Elangovan</dt>
+                            </div>
+                            <div class="pave_text_ab">
+                                <dt> Contributions:index.html, index.css, Github</dt>
+                                <dd><i>Quote:"I wish I could have 5 cats"</i></dd>
+                            </div>
+                        </dl>
+                    </div>  
+                </section>
+
+                <figure>
+
+                </figure>
+
+                <section>
+                    <h2>Fun Facts Table</h2>
+                    <table>
+                        <caption>Fun Facts About Our Team Members</caption>
+                        <thead>
+                            <tr>
+                                <th>Member</th>
+                                <th>Fun Fact</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ryan Stothard</td>
+                                <td>His favourite game is Minecraft</td>
+                            </tr>
+                            <tr>
+                                <td>Akshay Kumar</td>
+                                <td>Can engulf a whole plate of rice in 3 seconds</td>
+                            </tr>
+                            <tr>
+                                <td>Muhamad Danial Bin Rossman</td>
+                                <td>Drinks 10 liters of water every day</td>
+                            </tr>
+                            <tr>
+                                <td>Nik Mohamed Aiman Bin Nik Ahmad Ryad</td>
+                                <td>His favourite color is pink</td>
+                            </tr>
+                            <tr>
+                                <td>Paveteran Elangovan</td>
+                                <td>Once ran to a convenience store to buy milk 5 minutes before it closed.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            
+            </main>
         </section>
-
-        <section>
-            <h2>Member Contributions and Quotes</h2>
-            <dl>
-                <dt>Ryan Stothard(about.html, about.css, JIRA)</dt>
-                <dd><i>"I give em an inch, and they take a mile!"</i></dd>
-            </dl>
-            <dl>
-                <dt>Akshay Kumar(jobs.html, jobs.css, Group Leader)</dt>
-                <dd><i>"Looking for my next meal"</i></dd>
-            </dl>
-            <dl>
-                <dt>Muhamad Danial Bin Rossman(apply.html, apply.css)</dt>
-                <dd><i>"Aku suka kura-kura" ~ (I love turtles, in Malay)</i></dd>
-            </dl>
-            <dl>
-                <dt>Nik Mohamed Aiman(Head Website Designer for CSS, overall assistance)</dt>
-                <dd><i>"Sikit-sikit, lama-lama jadi bukit." ~ (Little by little, soon becomes a hill, in Malay)</i></dd>
-            </dl>
-            <dl>
-                <dt>Paveteran Elangovan(index.html, index.css, Github)</dt>
-                <dd><i>"I wish I could have 5 cats"</i></dd>
-            </dl>
-        </section>
-
-        <figure>
-            <img src="images/picgroup.jpg" alt="Group Photo" width="600" height="400">
-            <figcaption>Group members from Left to Right: Akshay, Danial , Nik, Paveteran, Ryan</figcaption>
-        </figure>
-
-        <section>
-            <h2>Fun Facts Table</h2>
-            <table>
-                <caption>Fun Facts About Our Team Members</caption>
-                <thead>
-                    <tr>
-                        <th>Members</th>
-                        <th>Fun Fact</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="about_id">Ryan Stothard (ID: 106218184)</td>
-                        <td>His favourite game is Minecraft</td>
-                    </tr>
-                    <tr>
-                        <td class="about_id">Akshay Kumar (ID: 106728654)</td>
-                        <td>Can engulf a whole plate of rice in 3 seconds</td>
-                    </tr>
-                    <tr>
-                        <td class="about_id">Muhamad Danial Bin Rossman (ID: 106729136)</td>
-                        <td>Drinks 10 liters of water every day</td>
-                    </tr>
-                    <tr>
-                        <td class="about_id">Nik Mohamed Aiman (ID: 106729026)</td>
-                        <td>His favourite color is pink</td>
-                    </tr>
-                    <tr>
-                        <td class="about_id">Paveteran Elangovan (ID: 106947909)</td>
-                        <td>Once ran to a convenience store to buy milk 5 minutes before it closed.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <aside>
+    </div>
+         <aside>
             <h4>Acknowledgement of Country</h4>
             <p>We respectfully acknowledge the Wurundjeri People of the Kulin Nation, who are the Traditional Owners of the land on which Kelantan United's offices and operations are located in Melbourne's east and outer-east, and pay our respect to their Elders past, present and emerging. We are honoured to recognise our connection to Wurundjeri Country, history, culture and spirituality through these locations, and strive to ensure that we operate in a manner that respects and honours the Elders and Ancestors of these lands. We also respectfully acknowledge Swinburne's Aboriginal and Torres Strait Islander staff, students, alumni, partners and visitors. We also acknowledge and respect the Traditional Owners of lands across Australia, their Elders, Ancestors, cultures and heritage, and recognise the continuing sovereignties of all Aboriginal and Torres Strait Islander Nations.</p>
         </aside>
-    </main>
-    <footer>
+</body>
+
+ <footer>
             <p>
                 <a href="#index" target="blank"><img src="images/jira.webp" alt="Jira" title="Jira" width="35" height="35" /></a>
                 <a href="#index" target="blank"><img src="images/github.webp" alt="GitHub" title="GitHub" width="35" height="35" /></a>
@@ -144,5 +209,4 @@
             <p>Contact us: <a href="mailto:info@fintech.com">info@fintech.com</a></p>
             <p>&copy;2026 FinTech. All rights reserved.</p>
         </footer>
-</body>
 </html>
