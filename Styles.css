@@ -1,188 +1,16 @@
 /*Akshay's Part Start*/
 /*Universal font family for all text*/
-* {font-family: Georgia}
 
-/*Ensures that the padding and border widths are are included inside the total width and height*/
+footer{
+    background-color:lightblue;
+}
+* {
+  font-family: Georgia, serif;
+}
+
+/*Ensures padding and border widths are included inside total dimensions*/
 *, *::before, *::after {
   box-sizing: border-box;
-}
-
-/*to make the background look nice*/
-body {
-    background-color:lightcyan;
-    background-image: linear-gradient( cornflowerblue,lightsteelblue,lightcyan,
-    lightsteelblue,cornflowerblue);
-}
-
-/*Adds a scrollbar*/
-html::-webkit-scrollbar {
-width: 0.7vw;
-}
-
-/*Adds a scrollbar thumb*/
-html::-webkit-scrollbar-thumb {
-background-color: rgba(0, 51, 255, 0.7);
-border-radius: 12px;
-}
-
-/*Makes the scrollbar change color when the mouse hovers over it*/
-html::-webkit-scrollbar-thumb:hover {
-background-color: rgba(0, 0, 190, 0.789);
-}
-
-/*Adds a scrollbar track*/
-html::-webkit-scrollbar-track {
-background-color: rgba(0, 119, 255, 0.859);
-border-radius: 12px;
-}
-
-/*heading_jb styling*/
-.heading_jb {
-text-align: center;
-width: 20%;
-max-width: 280px;
-min-width: 280px;
-margin: 0.5em;
-}
-
-/*lists styling*/
-.lists_jb {
-border-color: blue;
-border-style: solid;
-border-radius: 12px;
-background-color:lightcyan; 
-color: darkblue;
-padding: 2em;
-margin-bottom: 1em;
-}
-
-/*Empty paragraph, h2, and h1 styling*/
-p:not(:empty), h2, h1 {
-border-color: blue;
-border-style: solid;
-border-radius: 12px;
-background-color:lightcyan; 
-color: darkblue;
-padding: 2em;
-}
-
-/*span styling*/
-span {
-color: darkblue;
-font-weight: bold;
-display: flex;
-align-items: flex-start;
-}
-
-/*images styling*/
-img[src="Reporting Line/FED.png"], 
-img[src="Reporting Line/BED.png"],
-img[src="Reporting Line/VA.png"],
-img[src="Reporting Line/HDT.png"]{
-padding: 1em;
-width: fit-content;
-max-width: 200px;
-}
-
-/*aside styling*/
-.aside_jb {
-float: right;
-position: relative;
-width: 25%;
-margin: 0.5em;
-padding: 0.5em;
-border-radius: 12px;
-border-style: solid;
-border-color: blue; 
-background-color:lightcyan; 
-position: absolute;
-top: 7em;
-right: 0.5em;
-text-align: center;
-min-width: 300px;
-max-width: 300px;
-}
-
-/*footer styling*/
-.footer_jb {
-  position: relative;
-  clear: both;
-  margin-top: 3em;     
-  width: 100%;
-  text-align: center;
-}
-
-/*wrapper styling*/
-.wrapper {
-  display: flex;
-  flex-wrap: wrap;           
-  justify-content: center;     
-  gap: 1.2em;                 
-  max-width: 1200px;           
-  margin: 0 auto;              
-}
-
-/* Style all 4 child columns */
-.wrapper .extreme_left,
-.wrapper .left,
-.wrapper .right,
-.wrapper .extreme_right {
-  flex: 1 1 240px;            
-  max-width: 340px;           
-  height: fit-content;
-  transition: transform 0.25s ease;
-}
-
-/* Hover Animation */
-.wrapper .extreme_left:hover,
-.wrapper .left:hover,
-.wrapper .right:hover,
-.wrapper .extreme_right:hover {
-transform: scale(1.03);
-}
-
-/*Changes style of elements after a certain px size*/
-@media screen and (min-width:1200px){
-
-.wrapper {
-display: flex;
-max-width: 90%;
-}
-
-.wrapper .extreme_left,
-.wrapper .left,
-.wrapper .right,
-.wrapper .extreme_right {
-width: 50%;
-max-width: 280px;
-min-width: 240px;
-height: fit-content;
-margin: 1.2em;
-transition: scale(1.03);
-transition: transform 0.25s ease;
-}  
-
-.wrapper .extreme_left:hover,
-.wrapper .left:hover,
-.wrapper .right:hover,
-.wrapper .extreme_right:hover {
-transform: scale(1.03);
-transition: transform 0.25s ease;
-}
-}
-
-/*Changes style of elements after a certain px size*/
-@media screen and (max-width: 700px) {
-  .aside_jb {
-    position: static;   
-    margin: 1.5em auto; 
-    top: auto;          
-    right: auto;         
-  }
-
-  .footer_jb {
-    margin-top: 2em;     
-  }
 }
 
 body {
@@ -190,14 +18,28 @@ body {
   font-family: Georgia, serif;
 }
 
-/* Header container using flexbox for alignment */
+/*Adds a scrollbar*/
+html::-webkit-scrollbar {
+  width: 0.7vw;
+}
+
+/*Adds a scrollbar thumb*/
+html::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 51, 255, 0.7);
+  border-radius: 12px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 190, 0.789);
+}
+
+html::-webkit-scrollbar-track {
+  background-color: rgba(0, 119, 255, 0.859);
+  border-radius: 12px;
+}
+
+/* Top Navigation Bar */
 .top_area {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  justify-content: space-between;
-  padding: 0 2rem;
-  min-height: 6rem;
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -207,8 +49,6 @@ body {
   background-color: rgb(165, 159, 159);
   border-bottom: 5px solid grey;
   width: 100%;
-  min-width: max-content;
-  box-sizing: border-box;
 }
 
 .logo {
@@ -234,7 +74,6 @@ body {
   background-color: #fff;
 }
 
-/* Search bar styling */
 .searchbar {
   display: flex;
   align-items: center;
@@ -262,12 +101,129 @@ body {
   background-color: #ccc;
 }
 
+/* "The Jobs Page" Header Box */
+.heading_jb {
+  text-align: center;
+  width: 250px;
+  min-width: 250px;
+  margin: 1.5rem 0 1.5rem 2rem;
+  padding: 2em;
+  border: 3px solid blue;
+  border-radius: 12px;
+  background-color: lightcyan;
+  color: darkblue;
+}
+
+.heading_jb h1 {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: darkblue;
+}
+
+/* Main Content Layout Container */
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Style all 4 child job columns */
+.wrapper .extreme_left,
+.wrapper .left,
+.wrapper .right,
+.wrapper .extreme_right {
+  flex: 1;
+  min-width: 200px;
+  height: fit-content;
+  transition: transform 0.25s ease;
+}
+
+/* Job Cards / Boxes */
+.lists_jb,
+.wrapper h2, 
+.wrapper section,
+.wrapper div.text_box,
+.wrapper p:not(:empty) {
+  border: 3px solid blue;
+  border-radius: 12px;
+  background-color: lightcyan; 
+  color: darkblue;
+  padding: 1.5em;
+  margin-bottom: 1em;
+}
+
+/* Span styling inside jobs */
+.wrapper span,
+.lists_jb span {
+  color: darkblue;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Hover Animation */
+.wrapper .extreme_left:hover,
+.wrapper .left:hover,
+.wrapper .right:hover,
+.wrapper .extreme_right:hover {
+  transform: scale(1.03);
+}
+
+/* Right-side Aside Box ("Our Company Hiring Standards") */
+.aside_jb {
+  width: 280px;
+  min-width: 260px;
+  margin: 0;
+  padding: 1em;
+  border-radius: 12px;
+  border: 3px solid blue; 
+  background-color: lightcyan; 
+  color: darkblue;
+  text-align: center;
+  float:right;
+}
+
+/* Reporting Line images */
+img[src*="Reporting Line"] {
+  padding: 1em;
+  width: fit-content;
+  max-width: 100%;
+}
+
+/* Footer Styling */
+.footer_jb {
+  clear: both;
+  margin-top: 3em;     
+  width: 100%;
+  padding: 2em 0;
+  text-align: center;
+  border-top: 3px solid black;
+  background-color: lightblue;
+}
+
 .service_head {
   font-size: 2em;
 }
+
+/* Responsive Breakpoint for Mobile/Tablet */
+@media screen and (max-width: 900px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .aside_jb {
+    width: 100%;
+    margin-top: 1.5em;
+  }
+}
 /*Akshay's Part End*/
-
-
 /*Danial's PART STARTTTT*/
 
 body{
@@ -766,7 +722,8 @@ select:user-invalid{
     margin:0.5em;
     padding:0.5em;
     position:relative;
-    overflow:hide;
+    overflow:hidden;
+    display:block;
 }
 
 /* starting from here its all content inside the box including animation*/
@@ -895,7 +852,8 @@ select:user-invalid{
     position:absolute;
     content:url(images/NikAiman.jpeg);
     right:30%;
-    min-height: 10%;
+    height:100px;
+    width: auto;
     left:10%;
 }
 
@@ -928,7 +886,7 @@ select:user-invalid{
     position:absolute;
     content:url(images/Pave.jpeg);
     right:30%;
-    min-height: 10%;
+    min-height: 9%;
     left:10%;
 }
 
