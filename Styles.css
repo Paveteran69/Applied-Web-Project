@@ -7,7 +7,7 @@ body{
 .navigation{
     display: flex;
     font-family:Georgia;
-    height:100%;
+    height:100em;
     align-items: center;
     margin-left: 325px;
 }
@@ -17,9 +17,8 @@ body{
     border:solid grey;
     border-width:0px 0px 5px 0px;
     clear:both;
-    height:100px;
+    height:100em;
     background-color:rgb(165, 159, 159);
-    margin-top: 0;
 }
 
 .searchbar{
@@ -28,8 +27,8 @@ body{
 }
 
 .searchbar input[type=text]{
-    padding: 6px;
-    margin-top: 8px;
+    padding: 6em;
+    margin-top: 8em;
     font-size: 1em;
     border: none;
     font-style: italic;
@@ -37,9 +36,9 @@ body{
 
 .searchbar button {
   float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
+  padding: 6em 10em;
+  margin-top: 8em;
+  margin-right: 16em;
   background: #ddd;
   font-size: 1em;
   border: none;
@@ -58,10 +57,10 @@ body{
 .logo{
     position:absolute;
     font-size:2em;
-    margin-left:50px;
+    margin-left:50em;
     float:left;
-    min-width:20px ;
-    margin-top:13px;
+    min-width: 20em;
+    margin-top:13em;
 }
 
 
